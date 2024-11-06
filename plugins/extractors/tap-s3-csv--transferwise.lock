@@ -1,0 +1,91 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-s3-csv",
+  "namespace": "tap_s3_csv",
+  "variant": "transferwise",
+  "label": "AWS S3 CSV",
+  "docs": "https://www.matatika.com/data-details/tap-s3-csv/",
+  "repo": "https://github.com/transferwise/pipelinewise-tap-s3-csv",
+  "pip_url": "pipelinewise-tap-s3-csv",
+  "description": "AWS S3 CSV is a cloud-based storage service for CSV files.\n\nAWS S3 CSV is a tool provided by Amazon Web Services that allows users to store and manage CSV files in the cloud. With S3 CSV, users can upload, download, and manage CSV files from anywhere with an internet connection. The service is designed to be highly scalable and reliable, making it ideal for businesses of all sizes. Additionally, S3 CSV integrates with other AWS services, such as Amazon Athena and Amazon Redshift, to provide powerful data analytics capabilities. Overall, AWS S3 CSV is a powerful tool for businesses looking to store and manage large amounts of CSV data in the cloud.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/s3-csv.png",
+  "capabilities": [
+    "properties",
+    "discover",
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "aws_access_key_id",
+      "kind": "string",
+      "label": "AWS S3 Access Key ID",
+      "description": "The unique identifier for an AWS account that has access to the S3 bucket.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "aws_secret_access_key",
+      "kind": "string",
+      "label": "AWS S3 Secret Access Key",
+      "description": "The secret key associated with the AWS Access Key ID.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "description": "The date from which to start retrieving data from the S3 bucket.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "bucket",
+      "kind": "string",
+      "label": "Bucket",
+      "description": "The name of the S3 bucket containing the CSV files.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "tables",
+      "kind": "array",
+      "label": "Tables",
+      "description": "The name of the CSV file(s) to retrieve data from.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "aws_endpoint_url",
+      "kind": "string",
+      "label": "AWS Endpoint URL",
+      "description": "The URL of the AWS endpoint to connect to.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "aws_profile",
+      "kind": "string",
+      "label": "AWS profile name",
+      "description": "The name of the AWS profile to use for authentication.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    },
+    {
+      "name": "aws_session_token",
+      "kind": "string",
+      "label": "AWS S3 Session Token",
+      "description": "A temporary token that grants access to the S3 bucket.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    }
+  ]
+}
