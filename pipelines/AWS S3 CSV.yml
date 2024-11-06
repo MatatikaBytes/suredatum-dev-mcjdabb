@@ -1,0 +1,8 @@
+version: pipelines/v0.1
+name: AWS S3 CSV
+timeout: 0
+max_retries: 0
+data_components:
+- tap-s3-csv
+- Warehouse
+- dbt
