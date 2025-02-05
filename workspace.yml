@@ -1,6 +1,16 @@
-version: workspaces/v0.1
+version: workspaces/v0.2
 name: suredatum-dev
-domains: '@suredatum.com'
+domains:
+- suredatum.com
+- suredatum.com
+- suredatum.com
+- suredatum.com
+- suredatum.com
+- suredatum.com
+- suredatum.com
+- suredatum.com
+- suredatum.com
+- suredatum.com
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
 default_data_store: Warehouse
@@ -15,3 +25,4 @@ plugin_paths:
 - plugins
 data_store_paths:
 - datastores
+state_datastore: Warehouse
